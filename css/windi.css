@@ -96,6 +96,7 @@ footer {
   height: 400px;
   color: white;
   background-color: #81E4EB;
+  font-family: "Cabin", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -110,9 +111,6 @@ footer {
 .logo img {
   margin-left: 6px;
   margin-top: 10px; }
-
-.logo h1 {
-  font-family: "Cabin", sans-serif !important; }
 
 .text {
   display: flex;

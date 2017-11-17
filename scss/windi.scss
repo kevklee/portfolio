@@ -9,6 +9,7 @@
   height: 400px;
   color: white;
   background-color: #81E4EB;
+  font-family: "Cabin", sans-serif;
   @include flexy($just: center, $dir: column, $align: center);
 }
 
@@ -19,10 +20,6 @@
 .logo img {
   margin-left: 6px;
   margin-top: 10px;
-}
-
-.logo h1 {
-  font-family: "Cabin", sans-serif !important;
 }
 
 .text {

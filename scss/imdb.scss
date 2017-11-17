@@ -8,12 +8,9 @@
 .intro {
   height: 400px;
   color: black;
+  font-family: "Impact", sans-serif;
   background-color: #F8E71C;
   @include flexy($just: center, $dir: column, $align: center);
-}
-
-.logo h1 {
-  font-family: "Impact", sans-serif !important;
 }
 
 .text {

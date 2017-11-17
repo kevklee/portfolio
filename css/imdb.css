@@ -95,14 +95,12 @@ footer {
 .intro {
   height: 400px;
   color: black;
+  font-family: "Impact", sans-serif;
   background-color: #F8E71C;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.logo h1 {
-  font-family: "Impact", sans-serif !important; }
 
 .text {
   display: flex;
