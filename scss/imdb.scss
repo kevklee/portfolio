@@ -1,0 +1,71 @@
+@import 'utilities/variables',
+        'utilities/mixins',
+        'utilities/functions';
+
+@import 'content/hire.scss',
+        'content/footer.scss';
+
+.intro {
+  height: 400px;
+  color: black;
+  background-color: #F8E71C;
+  @include flexy($just: center, $dir: column, $align: center);
+}
+
+.logo h1 {
+  font-family: "Impact", sans-serif !important;
+}
+
+.text {
+  @include flexy($just: center, $dir: column, $align: center);
+}
+
+.text p {
+  margin-top: 10px;
+}
+
+.imdb {
+  text-align: center;
+  @include flexy($just: center, $dir: column, $align: center);
+}
+
+.imdb h2 {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.imdb p {
+    font-weight: lighter;
+    color: #7D7D7D;
+    max-width: 350px;
+    margin-top: 12px;
+    margin-bottom: 35px;
+    @media(min-width: $break-m){
+    max-width: 625px;
+    }
+    @media(min-width: $break-lg){
+    max-width: 775px;
+    }
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.imdb-img {
+  margin: 0 10%;
+  @media(min-width: $break-m){
+  margin: 0 15%;
+  }
+  @media(min-width: $break-lg){
+  margin: 0 20%;
+  }
+}
+
+.seasonal h2 {
+  font-size: 18px;
+}
+
+#forums-img {
+  margin-bottom: 100px;
+}

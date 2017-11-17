@@ -1,0 +1,64 @@
+* {
+      font-family: 'Monteserrat', sans-serif !important;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+  }
+
+// Hire //
+
+.hire {
+    height: 400px;
+    background-color: $color-primary;
+    text-align: center;
+    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+}
+
+.hire h2 {
+    font-family: 'Monteserrat', sans-serif !important;
+    font-weight: bold;
+    color: black;
+    padding-top: 45px;
+    @media(min-width: $break-m){
+    font-size: 35px;
+    };
+}
+
+.hire p {
+    font-family: 'Monteserrat', sans-serif !important;
+    font-weight: bold;
+    color: black;
+    margin-top: 25px;
+    width: 80%;
+    max-width: 550px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: lighter;
+    @media(min-width: $break-m){
+    font-size: 20px;
+    };
+}
+
+.btn-2 {
+    font-family: 'Monteserrat', sans-serif !important;
+    font-weight: bold;
+    color: black;
+    margin-top: 45px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-bottom: 55px;
+}
+
+.btn-2 a {
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    &:hover {
+        color: white;
+        background-color: $color-background;
+        border-color: $color-background;
+    }
+}

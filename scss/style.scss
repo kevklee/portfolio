@@ -1,0 +1,24 @@
+// Import Partials //
+
+@import 'utilities/variables',
+        'utilities/mixins',
+        'utilities/functions';
+
+@import 'content/header.scss',
+        'content/projects.scss',
+        'content/process.scss',
+        'content/hire.scss',
+        'content/footer.scss';
+
+// All
+
+* {
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+}

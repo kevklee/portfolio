@@ -1,0 +1,160 @@
+// Header //
+
+.header {
+          @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+          height: 100vh;
+
+}
+
+.header-wrap {
+    height: 100vh;
+    background-color: $color-background;
+    overflow: auto;
+    @include flexy($wrap: no-wrap, $align: center, $dir: column);
+          height: 100vh;
+        @media(min-width: $break-s){
+        background-color: transparent !important;
+        position: relative;
+        background-image: url("../../img/banner-l.png");
+        background-repeat:no-repeat;
+        }
+        @media(min-width: $break-s){
+        background-size: cover;
+        }
+}
+
+.main-logo {
+    @include flexy($wrap: no-wrap, $align: center, $dir: column);
+}
+
+.main-logo h1 {
+    color: $color-primary;
+    font-size: 60px;
+    position: relative;
+    top: 25px;
+    font-weight: bold;
+    @media(min-width: $break-lg){
+    font-size: 80px;
+    }
+}
+
+/*
+
+#logo {
+
+    position: relative;
+    top: 35px;
+    @media(min-width: $break-m){
+    display: none;
+    }
+}
+
+#logo-l {
+    display:none;
+    @media(min-width: $break-m){
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    }
+}
+*/
+
+.header-wrap h2 {
+    color: white;
+    margin-top: 5px;
+    position: relative;
+    top: 25%;
+    @media(min-width: $break-s){
+    font-size: 30px;
+    top: 24%;
+    }
+    @media(min-width: $break-m){
+    font-size: 40px;
+    top: 23%;
+    }
+    @media(min-width: $break-lg){
+    font-size: 50px;
+    top: 20%;
+    }
+    @media(min-width: $break-xlg){
+    font-size: 60px;
+    }
+}
+
+// Links
+
+.btn {
+    position: relative;
+    top: 54%;
+    display: block;
+    @media(min-width: $break-s){
+    top: 48%;
+    }
+    @media(min-width: $break-m){
+    top: 44%;
+    }
+    @media(min-width: $break-lg){
+    top: 37%;
+    }
+    @media(min-width: $break-xlg){
+    top: 33%;
+    }
+}
+
+.scroll {
+    position: relative;
+    margin-top: 20px;
+    top: 56%;
+    @media(min-width: $break-s){
+    top: 52%;
+    }
+    @media(min-width: $break-m){
+    top: 48%;
+    }
+    @media(min-width: $break-lg){
+    top: 41%;
+    }
+    @media(min-width: $break-xlg){
+    top: 37%;
+    }
+}
+
+.btn a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    padding: 7px 30px;
+    &:hover {
+        background-color: $color-primary;
+    }
+    @media(min-width: $break-s){
+    padding: 15px 50px;
+    font-size: 15px;
+        &:hover{background-color: #223A56;
+        border: 2px solid #223A56;
+        }
+
+    }
+}
+
+.scroll a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    padding: 7px 30px;
+    &:hover {
+        background-color: $color-primary;
+    }
+    @media(min-width: $break-s){
+    padding: 15px 50px;
+    font-size: 15px;
+    &:hover{background-color: #223A56;
+        border: 2px solid #223A56;}
+    }
+}

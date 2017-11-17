@@ -1,0 +1,142 @@
+// Projects //
+
+// project-wrap
+// project-grp-1
+// project-1-wrap
+
+.projects {
+    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+    height: 100%;
+    width: 100%;
+
+}
+
+// Project Heading
+
+.projects h2 {
+    margin-top: 7%;
+    font-family: "monteserrat", sans-serif;
+    color: $color-background;
+    font-weight: bold;
+    @media(max-width: $break-s){
+     margin-top: 15%;
+    }
+    @media(min-width: $break-m){
+     font-size: 35px;
+    }
+    @media(min-width: $break-lg){
+     font-size: 40px;
+    }
+}
+
+.projects p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "lato", sans-serif;
+    color: $color-text-secondary;
+    @media(min-width: $break-m){
+     font-size: 20px;
+    }
+    @media(min-width: $break-lg){
+     font-size: 30px;
+     height: 45px;
+    }
+}
+
+// Project Wrap
+
+.project-wrap {
+    overflow: hidden;
+    @media(max-width: $break-s){
+    max-width: 315px;
+    }
+    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+}
+
+
+
+.project-wrap p {
+    min-width: 155px;
+    font-size: 14px;
+    color: $color-text;
+        @media(min-width: $break-s){
+        max-width: 315px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    @media(min-width: $break-m){
+     height: 100px;
+    }
+    @media(min-width: $break-lg){
+     height: 75px;
+     margin-bottom: 10px;
+    }
+}
+
+// Images
+
+.project-grp-1 {
+margin-top: 10%;
+ @include flexy($just: center, $dir: column, $align: center);
+     @media(min-width: $break-s){
+           @include flexy($just: center, $dir: row, $align: center, $wrap: no-wrap);
+           margin-top: 4%;
+           margin-left: 2%;
+           margin-right: 2%;
+    }
+}
+
+.project-grp-1 img {
+    width: 100%;
+}
+
+.project-grp-2 img{
+    width: 100%;
+    margin-top: 10%;
+}
+
+#season {
+  @media(max-width: $break-s){
+  margin-top: 10%;
+}
+}
+
+#workforla {
+  @media(max-width: $break-s){
+  margin-top: 10%;
+}
+}
+
+.project-grp-2 {
+ @include flexy($just: center, $dir: column, $align: center);
+     @media(min-width: $break-s){
+           @include flexy($just: center, $dir: row, $align: center, $wrap: no-wrap);
+           margin-left: 2%;
+           margin-right: 2%;
+    }
+}
+
+//Margins
+
+.project-2-wrap {
+    @media(min-width: $break-s){
+    margin-left: 6%;
+    }
+}
+
+.project-3-wrap {
+    @media(min-width: $break-s){
+    margin-left: 6%;
+    }
+}
+.project-5-wrap {
+    @media(min-width: $break-s){
+    margin-left: 6%;
+    }
+}
+
+.project-6-wrap {
+    @media(min-width: $break-s){
+    margin-left: 6%;
+    }
+}
