@@ -15,13 +15,23 @@
         @media(min-width: $break-s){
         background-color: transparent !important;
         position: relative;
-        background-image: url("/img/banner-l.png");
+        background-image: url("../img/banner-l.png");
         background-repeat:no-repeat;
         }
         @media(min-width: $break-s){
         background-size: cover;
         }
 }
+
+// #background {
+//   width: 100%;
+//   position: absolute;
+//   height: 100vh;
+//   @include flexy($wrap: no-wrap, $align: center, $dir: column);
+//   @media(max-width: $break-s){
+//     display: none;
+//   }
+// }
 
 .main-logo {
     @include flexy($wrap: no-wrap, $align: center, $dir: column);
