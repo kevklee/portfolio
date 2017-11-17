@@ -95,21 +95,23 @@ footer {
 .intro {
   height: 400px;
   color: black;
-  font-family: "Impact", sans-serif;
   background-color: #F8E71C;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.text {
+.logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
 
-.text p {
-  margin-top: 10px; }
+.logo h1 {
+  font-family: "Impact", sans-serif !important; }
+
+.logo p {
+  font-family: "Impact", sans-serif !important; }
 
 .imdb {
   text-align: center;

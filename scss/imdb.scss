@@ -8,18 +8,22 @@
 .intro {
   height: 400px;
   color: black;
-  font-family: "Impact", sans-serif;
   background-color: #F8E71C;
   @include flexy($just: center, $dir: column, $align: center);
 }
 
-.text {
-  @include flexy($just: center, $dir: column, $align: center);
+.logo {
+    @include flexy($just: center, $dir: column, $align: center);
 }
 
-.text p {
-  margin-top: 10px;
+.logo h1 {
+  font-family: "Impact", sans-serif !important;
 }
+
+.logo p {
+  font-family: "Impact", sans-serif !important;
+}
+
 
 .imdb {
   text-align: center;
