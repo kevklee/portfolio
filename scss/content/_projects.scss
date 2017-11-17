@@ -56,19 +56,20 @@
 
 
 .project-wrap p {
-    min-width: 155px;
+  border: 1px solid red;
+    min-width: 150px;
     font-size: 14px;
     color: $color-text;
         @media(min-width: $break-s){
         max-width: 315px;
-        height: 150px;
+        height: 160px;
         margin-top: 20px;
     }
     @media(min-width: $break-m){
-     height: 100px;
+     height: 120px;
     }
     @media(min-width: $break-lg){
-     height: 75px;
+     height: 100px;
      margin-bottom: 20px;
     }
 }
@@ -93,6 +94,10 @@ margin-top: 10%;
 .project-grp-2 img{
     width: 100%;
     margin-top: 10%;
+}
+
+.project-grp-2 p {
+  margin-bottom: 100px;
 }
 
 #season {
