@@ -60,13 +60,14 @@
     min-width: 150px;
     font-size: 14px;
     color: $color-text;
+    height: 100px;
         @media(min-width: $break-s){
         max-width: 315px;
-        height: 160px;
+        height: 175px;
         margin-top: 20px;
     }
     @media(min-width: $break-m){
-     height: 120px;
+     height: 130px;
     }
     @media(min-width: $break-lg){
      height: 100px;
@@ -96,20 +97,28 @@ margin-top: 10%;
     margin-top: 10%;
 }
 
-.project-grp-2 p {
+#last-p {
+  @media(max-width: $break-s){
   margin-bottom: 100px;
+}
+}
+
+.project-grp-2 p {
+  @media(min-width: $break-m){
+  margin-bottom: 100px;
+  }
 }
 
 #season {
   @media(max-width: $break-s){
   margin-top: 10%;
-}
+  }
 }
 
 #workforla {
   @media(max-width: $break-s){
   margin-top: 10%;
-}
+  }
 }
 
 .project-grp-2 {
