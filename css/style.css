@@ -52,7 +52,7 @@
   font-weight: bold; }
   @media (min-width: 992px) {
     .main-logo h1 {
-      font-size: 80px; } }
+      font-size: 65px; } }
 
 /*
 
@@ -89,11 +89,11 @@
       top: 23%; } }
   @media (min-width: 992px) {
     .header-wrap h2 {
-      font-size: 50px;
+      font-size: 45px;
       top: 20%; } }
   @media (min-width: 1200px) {
     .header-wrap h2 {
-      font-size: 60px; } }
+      font-size: 50px; } }
 
 .btn {
   position: relative;
