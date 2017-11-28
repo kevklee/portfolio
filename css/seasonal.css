@@ -145,7 +145,8 @@ footer {
       max-width: 775px; } }
 
 .img-fluid {
-  width: 100%; }
+  width: 75%;
+  height: 75%; }
 
 .seasonal-img {
   margin: 0 10%; }
