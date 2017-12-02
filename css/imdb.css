@@ -138,8 +138,11 @@ footer {
       max-width: 775px; } }
 
 .img-fluid {
-  width: 75%;
-  height: 75%; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .img-fluid {
+      width: 75%;
+      height: 75%; } }
 
 .imdb-img {
   margin: 0 10%; }

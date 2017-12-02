@@ -71,6 +71,15 @@
   }
 }
 
+#seasonal-onboarding {
+  @media(min-width: $break-m){
+  width: 625px;
+  }
+  @media(min-width: $break-lg){
+  width: 850px;
+  }
+}
+
 #seasonal-app {
   margin-bottom: 100px;
 }

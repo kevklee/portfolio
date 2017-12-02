@@ -145,8 +145,11 @@ footer {
       max-width: 775px; } }
 
 .img-fluid {
-  width: 75%;
-  height: 75%; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .img-fluid {
+      width: 75%;
+      height: 75%; } }
 
 .seasonal-img {
   margin: 0 10%; }
@@ -156,6 +159,14 @@ footer {
   @media (min-width: 992px) {
     .seasonal-img {
       margin: 0 20%; } }
+
+@media (min-width: 768px) {
+  #seasonal-onboarding {
+    width: 625px; } }
+
+@media (min-width: 992px) {
+  #seasonal-onboarding {
+    width: 850px; } }
 
 #seasonal-app {
   margin-bottom: 100px; }
