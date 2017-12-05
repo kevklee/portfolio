@@ -79,6 +79,10 @@
   margin-top: 5px;
   position: relative;
   top: 25%; }
+  @media (min-width: 300px) {
+    .header-wrap h2 {
+      font-size: 22px;
+      top: 22%; } }
   @media (min-width: 550px) {
     .header-wrap h2 {
       font-size: 30px;

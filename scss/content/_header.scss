@@ -77,6 +77,10 @@
     margin-top: 5px;
     position: relative;
     top: 25%;
+    @media(min-width: $break-xxs){
+    font-size: 22px;
+    top: 22%;
+    }
     @media(min-width: $break-s){
     font-size: 30px;
     top: 24%;
