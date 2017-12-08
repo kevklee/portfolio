@@ -36,6 +36,23 @@
 
 }
 
+#myVideo {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  min-width: 100%;
+  @include flexy($wrap: no-wrap, $align: center, $dir: column);
+  @media(max-width: $break-s){
+    display: none;
+  }
+  @media(min-width: $break-xlg){
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    object-fit: fill;
+  }
+}
+
 .main-logo {
     @include flexy($wrap: no-wrap, $align: center, $dir: column);
 }
