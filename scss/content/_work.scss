@@ -23,6 +23,8 @@
 .work-box {
   position: relative;
   @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-s){
+  }
 }
 
 .work-wrap {
@@ -38,7 +40,8 @@
   margin-top: 30px;
   border-radius: 5px;
   border: 1px solid black;
-  width: 233px;
+  padding: 0 20px;
+  width: 193px;
   height: 231px;
   @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
   @media(min-width: $break-m){

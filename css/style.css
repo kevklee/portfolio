@@ -125,7 +125,8 @@ header h3 {
   margin-top: 30px;
   border-radius: 5px;
   border: 1px solid black;
-  width: 233px;
+  padding: 0 20px;
+  width: 193px;
   height: 231px;
   display: flex;
   flex-direction: column;
