@@ -1,0 +1,33 @@
+// Import Partials //
+
+@import 'utilities/variables',
+        'utilities/mixins',
+        'utilities/functions';
+
+@import 'content/header.scss',
+        'content/social.scss';
+
+// All
+
+* {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+}
+
+.side-project img {
+  width: 70%;
+  margin: 0 15%;
+  margin-top: 5%;
+}
+
+.side-project p {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5%;
+}

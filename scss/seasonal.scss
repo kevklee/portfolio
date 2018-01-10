@@ -1,73 +1,36 @@
+// Import Partials //
+
 @import 'utilities/variables',
         'utilities/mixins',
         'utilities/functions';
 
-@import 'content/hire.scss',
-        'content/footer.scss';
+@import 'content/header.scss',
+        'content/social.scss';
 
-.intro {
-  height: 400px;
-  color: white;
-  font-family: "Oxygen", sans-serif;
-  background-color: #00BE96;
-  @include flexy($just: center, $dir: column, $align: center);
+// All
+
+* {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-  @include flexy($just: center, $dir: row, $align: center);
-}
-
-.logo img {
-  margin-left: 5px;
-}
-
-.text {
-  @include flexy($just: center, $dir: column, $align: center);
-}
-
-.text p {
-  margin-top: 10px;
+body {
+    min-height: 100%;
 }
 
 .seasonal {
-  text-align: center;
-  @include flexy($just: center, $dir: column, $align: center);
+  margin: 5% 0;
 }
 
-.seasonal h2 {
-  margin-top: 50px;
-  font-size: 18px;
+.seasonal img {
+  width: 70%;
+  margin: 0 15%;
 }
 
 .seasonal p {
-    font-weight: lighter;
-    color: #7D7D7D;
-    max-width: 350px;
-    margin-top: 12px;
-    margin-bottom: 35px;
-    @media(min-width: $break-m){
-    max-width: 625px;
-    }
-    @media(min-width: $break-lg){
-    max-width: 775px;
-    }
-}
-
-.img-fluid {
-  width: 75%;
-  height: 75%;
-}
-
-.seasonal-img {
-  margin: 0 10%;
-  @media(min-width: $break-m){
-  margin: 0 15%;
-  }
-  @media(min-width: $break-lg){
-  margin: 0 20%;
-  }
-}
-
-#seasonal-app {
-  margin-bottom: 100px;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5%;
 }

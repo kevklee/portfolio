@@ -1,0 +1,21 @@
+//Social
+
+.social {
+      margin-top: 40px;
+        @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: row);
+}
+
+.social img {
+  width: 30px;
+}
+
+.social-icon {
+  margin-left: 40px;
+}
+
+//Footer Text
+
+.footer-wrap p {
+  text-align: center;
+  margin: 40px 0;
+}

@@ -1,91 +1,67 @@
-// My Process //
-
-// Wraps
+//My Process
 
 .process-wrap {
-    // margin-top: 100px;
-    height: auto;
-    background-color: $color-background-light;
-    overflow: auto;
-    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
-}
-
-.icon-content {
-    margin-left: 4%;
-    margin-right: 4%;
-    padding: 0 2%;
-    text-align: center;
-    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
-    @media(min-width: $break-s){
-    @include flexy($wrap: no-wrap, $just: center, $dir: row, $align: center);
-    }
-}
-
-// Spacing
-
-.my-process {
-    padding-top: 35px;
-}
-
-.process-wrap h2 {
-    margin-top: 30px;
-    color: $color-background;
-    @media(min-width: $break-s){
-    font-size: 30px;
-    font-weight: bold;
-    };
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
     @media(min-width: $break-m){
-    font-size: 35px;
-    };
-}
-
-.p-text {
-    color: $color-text-secondary;
-    margin-top: 20px;
-    @media(min-width: $break-s){
-    font-size: 20px;
-    };
-    @media(min-width:  $break-m){
-    font-size: 25px;
-    };
-}
-
-.icon-content p {
-    margin-top: 20px;
-    font-size: 14px;
-    font-weight: ligher;
-    color: $color-text;
-    line-height: 25px;
-}
-
-.icon {
-    margin-top: 55px;
-}
-
-.icon-text {
-    width: 100%;
-    @include flexy($just: center, $dir: column, $align: center);
-}
-
-.icon-p {
-    margin-top: 16px;
-    width: 100%;
-    max-width: 350px;
-    font-size: 12px;
-    color: $color-text;
-    @media(min-width: $break-s){
-    margin-bottom: 80px;
+@include flexy($wrap: no-wrap, $just: center, $align: center, $dir: row);
     }
 }
 
-.ux-design {
-    @media(min-width: $break-s){
-        margin: 0 5%;
-    }
+.process-card {
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+      @media(min-width: $break-m){
+      margin: 0 2%;
+      }
 }
 
-.coding p {
-    @media(max-width: $break-s){
-    margin-bottom: 60px;
-    }
+#service {
+  position: relative;
+  top: 18px;
+}
+
+#coding {
+  position: relative;
+  top: 39px;
+}
+
+.border {
+  height: 300px;
+  width: 266px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 30px;
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+}
+
+.border h3 {
+  margin-top: 35px;
+}
+
+//Resume
+
+.resume {
+    margin-top: 40px;
+    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+}
+
+.resume-border a {
+  padding: 17px 30px;
+  text-decoration: none;
+  color:black;
+  border: 1px solid black;
+  border-radius: 10px;
+  &:hover {
+    color: $color-primary;
+    background-color: $color-background;
+  }
+}
+
+.resume-text {
+      width: 278px;
+      text-align: center;
+      margin-top: 40px;
+      @media(min-width: $break-m){
+      width: 500px;
+      }
+      @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
 }

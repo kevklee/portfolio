@@ -1,77 +1,66 @@
+// Import Partials //
+
 @import 'utilities/variables',
         'utilities/mixins',
         'utilities/functions';
 
-@import 'content/hire.scss',
-        'content/footer.scss';
+@import 'content/header.scss',
+        'content/social.scss';
 
-.intro {
-  height: 400px;
-  color: white;
-  background-color: #81E4EB;
-  font-family: "Cabin", sans-serif;
-  @include flexy($just: center, $dir: column, $align: center);
+// All
+
+* {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-  @include flexy($wrap: no-wrap, $align: center, $dir: row);
+body {
+    min-height: 100%;
 }
 
-.logo img {
-  margin-left: 6px;
-  margin-top: 10px;
-}
-
-.text {
-  @include flexy($just: center, $dir: column, $align: center);
-}
-
-.text p {
-  margin-top: 10px;
-}
-
-.windi {
-  text-align: center;
-  @include flexy($just: center, $dir: column, $align: center);
-}
-
-.windi h2 {
-  margin-top: 50px;
-  font-size: 18px;
-}
-
-.windi p {
-    font-weight: lighter;
-    color: #7D7D7D;
-    max-width: 350px;
-    margin-top: 12px;
-    margin-bottom: 35px;
-    @media(min-width: $break-m){
-    max-width: 625px;
-    }
-    @media(min-width: $break-lg){
-    max-width: 775px;
-    }
-}
-
-.img-fluid {
+.windi-1 img {
   width: 100%;
 }
 
-.windi-img {
+.travel-task img {
+  width: 80%;
   margin: 0 10%;
-  @media(min-width: $break-m){
-  margin: 0 15%;
-  }
-  @media(min-width: $break-lg){
-  margin: 0 20%;
-  }
 }
 
-.seasonal h2 {
-  font-size: 18px;
+.travel-task p {
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 24px;
 }
 
-#windi-app {
-  margin-bottom: 100px;
+.chat-task img {
+  width: 80%;
+  margin: 0 10%;
+  margin-top: 8%;
+}
+
+.wireframes img {
+  width: 25%;
+  margin: 0 37.5%;
+  margin-top: 8%;
+}
+
+.wireframes p {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 24px;
+}
+
+.mockups img {
+  width: 90%;
+  margin: 0 5%;
+  margin-top: 5%;
+}
+
+.mockups p {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 24px;
 }

@@ -1,5 +1,5 @@
 $('.typeit').typeIt({
-  strings: [ "I live and breath design", "I enjoy front-end coding", "I like to help others"],
+  strings: [ "I create beautiful designs", "I enjoy front-end coding", "I live and breath ux"],
   speed: 160,
   breakLines: false,
   autoStart: true,

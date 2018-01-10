@@ -1,194 +1,87 @@
+//@media(min-width: $break-s){
+
 // Header //
 
-.header {
-          @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
-          height: 100vh;
-
+header {
+  height: 71px;
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: row);
 }
 
-.header-wrap {
-    height: 100vh;
-    background-color: $color-background;
-    overflow: auto;
-    @include flexy($wrap: no-wrap, $align: center, $dir: column);
-          height: 100vh;
-        @media(min-width: $break-s){
-        background-color: transparent !important;
-        position: relative;
-        // background-image: url("../img/banner-l.png");
-        background-repeat:no-repeat;
-        }
-        @media(min-width: $break-s){
-        background-size: cover;
-        }
+header h3 {
+  font-size: 24px;
 }
 
-#background {
+.header-logo {
+  font-size: 48px;
+  margin-left: 9px;
+  margin-bottom: 5px;
+  color: $color-primary;
+}
+
+//Banner
+
+.banner-wrap {
+  z-index: -1;
+  background-color: $color-background;
+  height: 70vh;
+    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+    @media(min-width: $break-m){
+    background-color: transparent;
+    }
+    @media(min-width: $break-s){
+background-size: cover;
+}
+}
+
+.banner img {
+  display:none;
+  height: 70vh;
+  z-index: -2;
+  @media(min-width: $break-m){
+  display: block;
   position: absolute;
-  height: 100vh;
-  @include flexy($wrap: no-wrap, $align: center, $dir: column);
-  @media(max-width: $break-s){
-    display: none;
-  }
-  @media(min-width: $break-lg){
   width: 100%;
   }
-
 }
 
-#myVideo {
-  position: absolute;
-  z-index: -1;
-  height: 100vh;
-  min-width: 100%;
-  @include flexy($wrap: no-wrap, $align: center, $dir: column);
-  @media(max-width: $break-s){
-    display: none;
+//Banner Text
+
+.banner-text {
+  color:white;
+  @media(min-width: $break-m){
+  font-size: 36px;
   }
-  @media(min-width: $break-xlg){
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-    object-fit: fill;
+  @media(min-width: $break-lg){
+  font-size: 48px;
   }
 }
 
-.main-logo {
-    @include flexy($wrap: no-wrap, $align: center, $dir: column);
+.typeit {
+  margin-top: 10px;
+  color: white;
+  @media(min-width: $break-m){
+  font-size: 36px;
+  }
+  @media(min-width: $break-lg){
+  font-size: 48px;
+  }
 }
 
-.main-logo h1 {
-    color: $color-primary;
-    font-size: 60px;
-    position: relative;
-    top: 25px;
-    font-weight: bold;
-    @media(min-width: $break-lg){
-    font-size: 65px;
-    }
-}
-
-/*
-
-#logo {
-
-    position: relative;
-    top: 35px;
-    @media(min-width: $break-m){
-    display: none;
-    }
-}
-
-#logo-l {
-    display:none;
-    @media(min-width: $break-m){
-    display: inline-block;
-    position: relative;
-    top: 30px;
-    }
-}
-*/
-
-.header-wrap h2 {
-    color: white;
-    margin-top: 5px;
-    position: relative;
-    top: 25%;
-    @media(min-width: $break-xxs){
-    font-size: 22px;
-    top: 22%;
-    }
-    @media(min-width: $break-s){
-    font-size: 30px;
-    top: 24%;
-    }
-    @media(min-width: $break-m){
-    font-size: 40px;
-    top: 23%;
-    }
-    @media(min-width: $break-lg){
-    font-size: 45px;
-    top: 20%;
-    }
-    @media(min-width: $break-xlg){
-    font-size: 50px;
-    }
-}
-
-// Links
+//Banner button
 
 .btn {
-    position: relative;
-    top: 54%;
-    display: block;
-    @media(min-width: $break-s){
-    top: 48%;
-    }
-    @media(min-width: $break-m){
-    top: 44%;
-    }
-    @media(min-width: $break-lg){
-    top: 37%;
-    }
-    @media(min-width: $break-xlg){
-    top: 33%;
-    }
-}
-
-.scroll {
-    position: relative;
-    margin-top: 20px;
-    top: 56%;
-    @media(min-width: $break-s){
-    top: 52%;
-    }
-    @media(min-width: $break-m){
-    top: 48%;
-    }
-    @media(min-width: $break-lg){
-    top: 41%;
-    }
-    @media(min-width: $break-xlg){
-    top: 37%;
-    }
-}
+  position: relative;
+  top: 15%;
+  margin-top: 20px;
+  border: 1px solid $color-primary;
+  padding: 10px 20px;
+  border-radius: 30px;
+  }
 
 .btn a {
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    border: 2px solid $color-primary;
-    border-radius: 100px;
-    padding: 7px 30px;
-    &:hover {
-        background-color: $color-primary;
-    }
-    @media(min-width: $break-s){
-    padding: 15px 50px;
-    font-size: 15px;
-        &:hover{background-color: #223A56;
-        border: 2px solid #223A56;
-        }
-
-    }
-}
-
-.scroll a {
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    border: 2px solid $color-primary;
-    border-radius: 100px;
-    padding: 7px 30px;
-    &:hover {
-        background-color: $color-primary;
-    }
-    @media(min-width: $break-s){
-    padding: 15px 50px;
-    font-size: 15px;
-    &:hover{background-color: #223A56;
-        border: 2px solid #223A56;}
-    }
+  text-decoration: none;
+  color: white;
+  &:hover {
+    color: $color-primary;
+  }
 }

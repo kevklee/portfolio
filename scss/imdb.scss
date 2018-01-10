@@ -1,76 +1,33 @@
+// Import Partials //
+
 @import 'utilities/variables',
         'utilities/mixins',
         'utilities/functions';
 
-@import 'content/hire.scss',
-        'content/footer.scss';
+@import 'content/header.scss',
+        'content/social.scss';
 
-.intro {
-  height: 400px;
-  color: black;
-  background-color: #F8E71C;
-  @include flexy($just: center, $dir: column, $align: center);
+// All
+
+* {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-    @include flexy($just: center, $dir: column, $align: center);
+body {
+    min-height: 100%;
 }
 
-.logo h1 {
-  font-family: "Impact", sans-serif !important;
-}
-
-.logo p {
-  font-family: "Impact", sans-serif !important;
-}
-
-
-.imdb {
-  text-align: center;
-  @include flexy($just: center, $dir: column, $align: center);
-}
-
-.imdb h2 {
-  margin-top: 50px;
-  font-size: 18px;
+.imdb img {
+  width: 70%;
+  margin: 0 15%;
+  margin-top: 5%;
 }
 
 .imdb p {
-    font-weight: lighter;
-    color: #7D7D7D;
-    max-width: 350px;
-    margin-top: 12px;
-    margin-bottom: 35px;
-    @media(min-width: $break-m){
-    max-width: 625px;
-    }
-    @media(min-width: $break-lg){
-    max-width: 775px;
-    }
-}
-
-.img-fluid {
-  width: 100%;
-  @media(min-width: $break-m){
-  width: 75%;
-  height: 75%;
-  }
-}
-
-.imdb-img {
-  margin: 0 10%;
-  @media(min-width: $break-m){
-  margin: 0 15%;
-  }
-  @media(min-width: $break-lg){
-  margin: 0 20%;
-  }
-}
-
-.seasonal h2 {
-  font-size: 18px;
-}
-
-#forums-img {
-  margin-bottom: 100px;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 5%;
 }

@@ -5,15 +5,14 @@
         'utilities/functions';
 
 @import 'content/header.scss',
-        'content/projects.scss',
+        'content/work.scss',
         'content/process.scss',
-        'content/hire.scss',
-        'content/footer.scss';
+        'content/social.scss';
 
 // All
 
 * {
-    font-family: 'Monteserrat', sans-serif;
+    font-family: 'Circular Std', sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 0;

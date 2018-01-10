@@ -1,0 +1,62 @@
+//Content Banner
+
+.content-banner {
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: row);
+}
+
+.content-border {
+  margin-top: 30px;
+  width: 266px;
+  border: 1px solid black;
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: row);
+}
+
+.content-banner p {
+  position: relative;
+  font-size: 24px;
+  color: black;
+  padding: 16px 0;
+}
+
+//My Work
+
+.work-box {
+  position: relative;
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+}
+
+.work-wrap {
+  @media(min-width: $break-s){
+    @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: row);
+  }
+  @media(min-width: $break-m){
+    @include flexy($wrap: no-wrap, $just: center, $align: space-around, $dir: row);
+  }
+}
+
+.work {
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 233px;
+  height: 231px;
+  @include flexy($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-m){
+    margin: 0 2%;
+    margin-top: 30px;
+  }
+  @media(min-width: $break-lg){
+    margin: 0 5%;
+    margin-top: 30px;
+  }
+}
+
+.work img {
+  position: relative;
+  bottom: 5px;
+}
+
+.work p {
+  position: relative;
+  top: 5px;
+}
