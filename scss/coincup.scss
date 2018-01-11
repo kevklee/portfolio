@@ -1,0 +1,60 @@
+// Import Partials //
+
+@import 'utilities/variables',
+        'utilities/mixins',
+        'utilities/functions';
+
+@import 'content/header.scss',
+        'content/social.scss';
+
+// All
+
+* {
+    font-family: 'Circular Std', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+}
+
+.coincup {
+  margin: 5% 0;
+}
+
+.coincup img {
+  width: 80%;
+  margin: 0 10%;
+}
+
+.coincup p {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.coincup-wireframes img {
+  width: 25%;
+  margin: 0 37.5%;
+  margin-top: 8%;
+}
+
+.coincup-wireframes p {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 24px;
+}
+
+.coincup-mockups img {
+  width: 70%;
+  margin: 0 15%;
+  margin-top: 5%;
+}
+
+.coincup-mockups p {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 24px;
+}
