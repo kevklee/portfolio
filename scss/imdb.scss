@@ -24,6 +24,11 @@ body {
   width: 70%;
   margin: 0 15%;
   margin-top: 5%;
+  @media(min-width: $break-lg){
+    width: 50%;
+    margin: 0 25%;
+    margin-top: 5%;
+  }
 }
 
 .imdb p {

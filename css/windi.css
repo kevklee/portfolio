@@ -103,10 +103,18 @@ body {
 
 .windi-1 img {
   width: 100%; }
+  @media (min-width: 992px) {
+    .windi-1 img {
+      width: 60%;
+      margin: 0 20%; } }
 
 .travel-task img {
   width: 80%;
   margin: 0 10%; }
+  @media (min-width: 992px) {
+    .travel-task img {
+      width: 60%;
+      margin: 0 20%; } }
 
 .travel-task p {
   text-align: center;
@@ -117,11 +125,21 @@ body {
   width: 80%;
   margin: 0 10%;
   margin-top: 8%; }
+  @media (min-width: 992px) {
+    .chat-task img {
+      width: 60%;
+      margin: 0 20%;
+      margin-top: 8%; } }
 
 .wireframes img {
   width: 25%;
   margin: 0 37.5%;
   margin-top: 8%; }
+  @media (min-width: 992px) {
+    .wireframes img {
+      width: 20%;
+      margin: 0 40%;
+      margin-top: 8%; } }
 
 .wireframes p {
   text-align: center;
@@ -132,6 +150,11 @@ body {
   width: 90%;
   margin: 0 5%;
   margin-top: 5%; }
+  @media (min-width: 992px) {
+    .mockups img {
+      width: 60%;
+      margin: 0 20%;
+      margin-top: 5%; } }
 
 .mockups p {
   text-align: center;

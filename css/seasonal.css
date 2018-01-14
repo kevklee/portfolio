@@ -107,6 +107,10 @@ body {
 .seasonal img {
   width: 70%;
   margin: 0 15%; }
+  @media (min-width: 992px) {
+    .seasonal img {
+      width: 50%;
+      margin: 0 25%; } }
 
 .seasonal p {
   font-size: 24px;

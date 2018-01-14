@@ -107,6 +107,10 @@ body {
 .coincup img {
   width: 80%;
   margin: 0 10%; }
+  @media (min-width: 992px) {
+    .coincup img {
+      width: 60%;
+      margin: 0 20%; } }
 
 .coincup p {
   font-size: 24px;
@@ -117,6 +121,11 @@ body {
   width: 25%;
   margin: 0 37.5%;
   margin-top: 8%; }
+  @media (min-width: 992px) {
+    .coincup-wireframes img {
+      width: 20%;
+      margin: 0 40%;
+      margin-top: 8%; } }
 
 .coincup-wireframes p {
   text-align: center;
@@ -127,6 +136,11 @@ body {
   width: 70%;
   margin: 0 15%;
   margin-top: 5%; }
+  @media (min-width: 992px) {
+    .coincup-mockups img {
+      width: 40%;
+      margin: 0 30%;
+      margin-top: 5%; } }
 
 .coincup-mockups p {
   text-align: center;

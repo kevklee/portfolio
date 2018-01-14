@@ -105,6 +105,11 @@ body {
   width: 70%;
   margin: 0 15%;
   margin-top: 5%; }
+  @media (min-width: 992px) {
+    .side-project img {
+      width: 50%;
+      margin: 0 25%;
+      margin-top: 5%; } }
 
 .side-project p {
   font-size: 24px;
